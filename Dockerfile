@@ -6,4 +6,5 @@ RUN pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
 
+COPY settings.toml /app/settings.toml
 COPY ./finance_api /app/app
